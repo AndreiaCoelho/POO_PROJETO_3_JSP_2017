@@ -12,6 +12,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+        <h1>Amortização Constante</h1>
+        <!--<% int for (int i = 0; i <= 5; i++){} %>-->
+        <%= %>
+        
+        <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
