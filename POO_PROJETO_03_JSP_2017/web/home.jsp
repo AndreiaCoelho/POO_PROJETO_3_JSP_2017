@@ -50,7 +50,6 @@
         <img src="images/amortizacao1.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h1>Amortização Constante</h1>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
         </div>
       </div>
 
@@ -58,7 +57,6 @@
         <img src="images/americana.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h1>Amortização-Americana</h1>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
         </div>
       </div>
     
@@ -66,7 +64,6 @@
         <img src="images/tabela.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h1>Tabela Price</h1>
-          <p>Beautiful flowers in Kolymbari, Crete.</p>
         </div>
       </div>
 
