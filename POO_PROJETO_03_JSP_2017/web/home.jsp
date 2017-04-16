@@ -113,7 +113,7 @@
             <h2>Tabela Price</h2>
             <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos" (em inglês: Observations on Reversionary Payments).</p>
             <p>O método foi idealizado pelo seu autor para pensões e aposentadorias. No entanto, foi a partir da 2ª revolução industrial que sua metodologia de cálculo foi aproveitada para cálculos de amortização de empréstimo.</p>
-       </div>
+       
         </br></br></br>
         
     
@@ -143,8 +143,8 @@
     </div>
     </div>
     </div>
-       		  
-       </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+    </div> 		  
+       </br></br></br></br></br></br></br></br></br></br>
       
         
        <%@include file="WEB-INF/jspf/rodape.jspf" %>
