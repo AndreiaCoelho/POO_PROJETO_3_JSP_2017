@@ -1,3 +1,5 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<div class="container-fluid" style="background-color: rgb(195, 195, 195);">
+    <h1>Entenda sobre a Amortização – Constante, a Amortização-Americana e Tabela Price</h1>
+</div>
