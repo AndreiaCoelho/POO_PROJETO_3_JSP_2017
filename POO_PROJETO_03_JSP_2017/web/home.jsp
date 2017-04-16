@@ -83,7 +83,7 @@
         
         <div class="container-fluid">
             </br></br>
-
+            <div class="container-fluid">
             <h1>Entenda sobre a Amortização – Constante, Amortização-Americana e Tabela Price</h1>
             <img align="left" src="images/ideia.jpg" alt="Flower" width="460" height="345">
             
@@ -116,8 +116,39 @@
        </div>
         </br></br></br>
         
-
-        <%@include file="WEB-INF/jspf/rodape.jspf" %>
+    
+    
+    <h2>Equipe</h2> 
+    <div class="col-md-4">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <center> <h4>Andreia Coelho</h4>
+    <img src="images/andreia.jpg" height="100"> 
+    </div>
+    <div class="panel-body">
+    <p>Eu sou a integrante do grupo Andreia Coelho.</p>
+    </center>
+    </div>
+    </div>
+    
         
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <center><h4>Daniel</h4>
+    <img src="images/Daniel.jpeg" height="110"> 
+    </div>
+    <div class="panel-body">
+    <p>Eu sou o daniel intragrente do gurpo.</p>
+
+    </div>
+    </div>
+    </div>
+       		  
+       </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+      
+        
+       <%@include file="WEB-INF/jspf/rodape.jspf" %>
+       
     </body>
+   
 </html>
