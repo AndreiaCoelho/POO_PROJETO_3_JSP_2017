@@ -2,5 +2,5 @@
 <%@ page pageEncoding="UTF-8" %>
 <div class="container-fluid" style="background-color: rgb(195, 195, 195)" style="text-align:center;">
     <img src="images/logotipo.png" class="centered mini image" />
-    <h1 align="middle"> Amortização e Tabela Price</h1>
+    <!-- <h1> Amortização e Tabela Price</h1> -->
  </div>

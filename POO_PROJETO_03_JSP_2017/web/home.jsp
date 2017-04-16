@@ -82,9 +82,11 @@
 </div>
         
         <div class="container-fluid">
+            </br></br>
+
             <h1>Entenda sobre a Amortização – Constante, Amortização-Americana e Tabela Price</h1>
-            <img src="images/ideia.jpg" alt="Flower" width="460" height="345">
-            </br></br></br>
+            <img align="left" src="images/ideia.jpg" alt="Flower" width="460" height="345">
+            
             <h2>Amortização – Constante</h2>
             </br>
             <h3>O que é Sistema de Amortização?</h3>
@@ -109,7 +111,7 @@
             <p>Juros = 3% de 50.000 = 1.500 </p>
             </br></br>
             <h2>Tabela Price</h2>
-            <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos" (em inglês: Observations on Reversionary Payments[1]).</p>
+            <p>Tabela Price, também chamado de sistema francês de amortização, é um método usado em amortização de empréstimo cuja principal característica é apresentar prestações (ou parcelas) iguais. O método foi apresentado em 1771 por Richard Price em sua obra "Observações sobre Pagamentos Remissivos" (em inglês: Observations on Reversionary Payments).</p>
             <p>O método foi idealizado pelo seu autor para pensões e aposentadorias. No entanto, foi a partir da 2ª revolução industrial que sua metodologia de cálculo foi aproveitada para cálculos de amortização de empréstimo.</p>
        </div>
         </br></br></br>
