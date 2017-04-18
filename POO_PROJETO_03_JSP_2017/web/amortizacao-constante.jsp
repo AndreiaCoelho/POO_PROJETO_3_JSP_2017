@@ -21,90 +21,121 @@
             <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
             <%@include file="WEB-INF/jspf/menu.jspf" %>
             
-                <br/>
-            <%
-            double capitalInicial = 0, juros = 0;
-            int meses = 0;
-           
-            try{
-              capitalInicial = Double.parseDouble(request.getParameter("capitalInicial"));
-              juros = Double.parseDouble(request.getParameter("taxaJuros"));
-              meses = Integer.parseInt(request.getParameter("tempo"));
-            } catch(Exception ex){ }
-            %>
-            <main>
+            <body>
+       <%
+         
+ 
+       
+               
+        double vlp = 0 ; 
+        int per = 0 ;
+        double txjrs=0;
+        double jurosperiodo=0;
+        double totaljuros = 0;
+        double amortizacao = 0;
+        double amortizacaoaux = 0;
+        double prestacao = 0;
+        double prestacaototal = 0;
+       double saldodevedor = 0;
+      
+       
+       
+   
+        
+            try{per = Integer.parseInt(request.getParameter("periodo")); 
+            txjrs = Integer.parseInt(request.getParameter("juros")); 
+            vlp = Integer.parseInt(request.getParameter("valorprincipal"));
+            amortizacao = vlp/per;
+            saldodevedor = vlp;
+            }
+            catch(Exception e){}
+            
+            
+         %>
+        
+        
+        
+          <main>
             <div class="container">
             <h1 class="section-title">Amortização Constante</h1>
             <form>
-            <table class="table">
+            <table border="2">
             <tr>
             <th colspan='3'>
-            "Entrada de Dados"
+            Entrada de Dados
             </th>
             </tr>
             <tr>
             <th>
-            "Valor inicial"
+            Valor principal
             </th>
             <th>
-            "Taxa de juros"
+            Juros em %
             </th>
             <th>
-            "Tempo(Meses)"
+            Período em meses
             </th>
             </tr>
             <tr>
             <td>
-            <input type='text' name='capitalInicial' value='" + capitalInicial + "' placeholder='R$' />
+            <input type="text" name="valorprincipal"  />
             </td>
             <td>
-            <input type='text' name='taxaJuros' value='" + juros + "' placeholder='%'/>
+            <input type="text" name="juros" />
             </td>
             <td>
-            <input type='text' name='tempo' value='" + meses + "'/>
+            <input type="text" name="periodo">
             </td>
             </tr>
             </table>
+                
+                <br>
+                 <center><input class="btn btn-default" type='submit' value='Calcular'/></center>
+
             <br/>
-            <table class="table table-bordered">
+            <table border="2">
             <tr>
-            <th colspan='" + (meses+1) + "'>
-            ("Saída de Dados")
-            </th>
-            <tr>
-            <th>
-          ("Montante Inicial"); 
-           </th>
-           <%for (int i = 1; i <=meses; i++){%>
-                <th>
-                ("Mês"  + <%=i%>);
-                </th>
-            <%}%>
-            </tr>
-            <tr>
-         
-            DecimalFormat df = new DecimalFormat("#.##");
-            <td>
-            ("R$ " + df.format(capitalInicial));
-            </td>
-            for (int i = 1; i<=meses; i++){
-                ("<td>");
-                ("R$ " + df.format(resultado));
-                resultado *= (1+(juros/100));
-                </td>
-            }
-            </tr>
-            </table>
-            <center><input class="btn btn-default" type='submit' value='Calcular'/></center>
-            </form>
-            </div>
-           
-            <script type="text/javascript" src="js/bootstrap.js"</script>
-        
-         <%@include file="WEB-INF/jspf/rodape.jspf" %>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-            <script src="bootstrap/js/bootstrap.js"></script>
             
-             </main>
+             <th>
+            Período
+            </th>
+           
+            <th>
+           Juros
+           </th>
+            
+           <th>
+         Prestação
+           </th>
+		   <th>
+           Amortização
+           </th>
+		   <th>
+          Saldo devedor
+           </th>
+                
+     <%for(int i=1; i<= per; i++){%>
+            <tr>
+                <th> <%=i%></th>
+                 <th> <%= jurosperiodo = (per-i+1)*(txjrs/100)*(amortizacao) %> </th>
+                  <th> <%= prestacao = amortizacao+jurosperiodo %> </th>
+                   <th> <%= amortizacao %> </th>
+                    <th> <%=  saldodevedor = saldodevedor - amortizacao %> </th>
+            </tr>
+            
+            <%= amortizacaoaux = amortizacaoaux + amortizacao %>
+                      <%= totaljuros = totaljuros + jurosperiodo %>
+                      <%= prestacaototal =  prestacaototal + prestacao %> 
+             <%}%>
+             
+             
+            </table>
+            
+             <h4>Total:</h4> 
+                           <h4>Amortização : <%= amortizacaoaux %></h4>
+                           <h4>Juros : <%= totaljuros %></h4>
+                           <h4>Prestação : <%= prestacaototal %> </h4>
+                   
+        
             </body>
             </html>
