@@ -5,15 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
- <!DOCTYPE html>
-          <html>            
-          <head>
-          <link rel="stylesheet" href="estilo/bootstrap.css">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link href="estilo/style.css" rel="stylesheet">
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-          </head>
-          
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
         <title>Home</title>
         <style>
             .carousel-inner > .item > img,  .carousel-inner > .item > a > img {
@@ -73,10 +70,10 @@
         <div class="container-fluid">
             </br></br>
             <div class="container-fluid">
-                <h1>Entenda sobre a Amortização – Constante, Amortização-Americana e Tabela Price</h1>
+                <h1>Entenda sobre a Amortização Constante, Amortização Americana e Tabela Price</h1>
                 <img align="left" src="images/ideia.jpg" alt="Flower" width="460" height="345">
 
-                <h2>Amortização – Constante</h2>
+                <h2>Amortização Constante</h2>
                 </br>
                 <h3>O que é Sistema de Amortização?</h3>
                 <p>Primeiramente, é importante compreender que a amortização significa o processo de encerramento de uma dívida por meio de pagamentos periódicos realizados com base em planejamento. Cada prestação é correspondente ao total do reembolso do capital, aos juros do saldo devedor, ou de ambos os casos.</p>
@@ -91,7 +88,7 @@
                     <li>E o saldo devedor também é decrescente.</li>
                 </ul>
                 </br></br>
-                <h2>Amortização – Americana</h2>
+                <h2>Amortização Americana</h2>
                 <p>O Sistema Americano de Amortização é um tipo de quitação de empréstimo que favorece aqueles que desejam pagar o valor principal através de uma única parcela, porém os juros devem ser pagos periodicamente ou, dependendo do contrato firmado entre as partes, os juros são capitalizados e pagos junto ao valor principal. Observe as planilhas demonstrativas desse modelo de amortização.</p>
                 <p>Exemplo 1 :</p>
                 <p>Um empréstimo de R$ 50.000,00 será pago através do sistema americano no prazo de 10 meses, a juros mensais de 3% ao mês. 
@@ -111,12 +108,12 @@
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <img src="images/andreia.jpg" width="200" height="200" class="img-circle" alt="Generic placeholder thumbnail"/>
                             <h4>Andréia Coelho</h4>
-                            <span class=""text-muted"> Desenvolvedora de Home e Amortização Constante</span>
+                            <span class=""text-muted> Desenvolvedora do JSP Home e Amortização Constante</span>
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <img src="images/Daniel.jpeg" width="200" height="200" class="img-circle" alt="Generic placeholder thumbnail"/>
-                            <h4>Daniel Alves</h4>
-                            <span class=""text-muted"> Desenvolvedor de Amortização Americana e Tabela Price</span>
+                            <h4>Daniel</h4>
+                            <span class=""text-muted> Desenvolvedor do JSP Amortização Americana e Tabela Price</span>
                         </div>
                     </div>
                 </div>
