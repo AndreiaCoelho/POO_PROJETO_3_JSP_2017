@@ -7,13 +7,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
   
       
-        
-        
-        
-        
-        
-       <!--Inicio codigo Leonardo-->
-        
       
           <!DOCTYPE html>
           <html>            
@@ -105,16 +98,13 @@
             <center><input class="btn btn-default" type='submit' value='Calcular'/></center>
             </form>
             </div>
-            </main>
-            <script type="text/javascript" src="js/bootstrap.js" />
-            </body>
-            </html>
-        }
-    }
-        
+           
+            <script type="text/javascript" src="js/bootstrap.js"</script>
         
          <%@include file="WEB-INF/jspf/rodape.jspf" %>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
             <script src="bootstrap/js/bootstrap.js"></script>
+            
+             </main>
             </body>
             </html>
