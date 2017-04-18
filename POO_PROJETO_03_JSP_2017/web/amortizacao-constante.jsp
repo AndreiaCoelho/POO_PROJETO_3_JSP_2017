@@ -18,11 +18,11 @@
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
 
-    <body>
+
         <%
-            DecimalFormat df = new DecimalFormat("#.##"); 
+            DecimalFormat df = new DecimalFormat("#.##");
             double vlp = 0;
-            int per = 0;
+            double per = 0;
             double txjrs = 0;
             double jurosperiodo = 0;
             double totaljuros = 0;
@@ -33,9 +33,9 @@
             double saldodevedor = 0;
 
             try {
-                per = Integer.parseInt(request.getParameter("periodo"));
-                txjrs = Integer.parseInt(request.getParameter("juros"));
-                vlp = Integer.parseInt(request.getParameter("valorprincipal"));
+                per = Double.parseDouble(request.getParameter("periodo"));
+                txjrs = Double.parseDouble(request.getParameter("juros"));
+                vlp = Double.parseDouble(request.getParameter("valorprincipal"));
                 amortizacao = vlp / per;
                 saldodevedor = vlp;
             } catch (Exception e) {
@@ -106,26 +106,33 @@
 
                             <%for (int i = 1; i <= per; i++) {%>
                         <tr>
+                            <%
+
+                                jurosperiodo = (per - i + 1) * (txjrs / 100) * (amortizacao);
+                                prestacao = amortizacao + jurosperiodo;
+                                saldodevedor = saldodevedor - amortizacao;
+                            %>
                             <th> <%=i%></th>
-                            <th> <%= jurosperiodo = (per - i + 1) * (txjrs / 100) * (amortizacao)%> </th>
-                            <th> <%= prestacao = amortizacao + jurosperiodo%> </th>
-                            <th> <%= amortizacao%> </th>
-                            <th> <%=  saldodevedor = saldodevedor - amortizacao%> </th>
+                            <th> <%= df.format(jurosperiodo)%> </th>
+                            <th> <%= df.format(prestacao)%> </th>
+                            <th> <%= df.format(amortizacao)%> </th>
+                            <th> <%=  df.format(saldodevedor)%> </th>
                         </tr>
 
-                        <%= amortizacaoaux = amortizacaoaux + amortizacao%>
-                        <%= totaljuros = totaljuros + jurosperiodo%>
-                        <%= prestacaototal = prestacaototal + prestacao%> 
+
+                        <% amortizacaoaux = amortizacaoaux + amortizacao;
+                            totaljuros = totaljuros + jurosperiodo;
+                            prestacaototal = prestacaototal + prestacao; %>
                         <%}%>
 
 
                     </table>
 
                     <h4>Total:</h4> 
-                    <h4>Amortização : <%= amortizacaoaux%></h4>
-                    <h4>Juros : <%= totaljuros%></h4>
-                    <h4>Prestação : <%= prestacaototal%> </h4>
+                    <h4>Amortização : <%= df.format(amortizacaoaux)%></h4>
+                    <h4>Juros : <%= df.format(totaljuros)%></h4>
+                    <h4>Prestação : <%= df.format(prestacaototal)%> </h4>
                     </br></br>
-                   <%@include file="WEB-INF/jspf/rodape.jspf" %>
+                    <%@include file="WEB-INF/jspf/rodape.jspf" %>
                     </body>
                     </html>
