@@ -5,16 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"> 
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
+  
       
         
         
@@ -24,16 +15,18 @@
        <!--Inicio codigo Leonardo-->
         
       
-           <!DOCTYPE html>
+          <!DOCTYPE html>
           <html>            
           <head>
           <link rel="stylesheet" href="estilo/bootstrap.css">
           <meta name="viewport" content="width=device-width, initial-scale=1">
           <link href="estilo/style.css" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+          <title>JSP Page</title>
           </head>
           <body>
-            
+            <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+            <%@include file="WEB-INF/jspf/menu.jspf" %>
             
                 <br/>
             <%
@@ -120,10 +113,8 @@
     }
         
         
-        
-        
-        
-        <%@include file="WEB-INF/jspf/rodape.jspf" %>
-        
-    </body>
-</html>
+         <%@include file="WEB-INF/jspf/rodape.jspf" %>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="bootstrap/js/bootstrap.js"></script>
+            </body>
+            </html>

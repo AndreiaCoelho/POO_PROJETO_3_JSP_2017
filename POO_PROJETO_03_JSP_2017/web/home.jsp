@@ -5,12 +5,15 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"> 
+ <!DOCTYPE html>
+          <html>            
+          <head>
+          <link rel="stylesheet" href="estilo/bootstrap.css">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="estilo/style.css" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+          </head>
+          
         <title>Home</title>
         <style>
             .carousel-inner > .item > img,  .carousel-inner > .item > a > img {
