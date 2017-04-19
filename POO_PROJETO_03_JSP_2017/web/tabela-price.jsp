@@ -70,7 +70,7 @@
                 </tr>
                 <%}%>
                 <tr>
-                    <td>Total</td>
+                    <td>Total(R$)</td>
                     <td><%=String.format("%.2f", pmt * (x - 1))%></td>
                     <td><%=String.format("%.2f", jacum)%></td>
                     <td><%=String.format("%.2f", tamort)%></td>

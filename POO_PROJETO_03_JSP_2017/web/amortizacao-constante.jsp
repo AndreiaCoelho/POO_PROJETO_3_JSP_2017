@@ -116,7 +116,7 @@
                             <th> <%= df.format(jurosperiodo)%> </th>
                             <th> <%= df.format(prestacao)%> </th>
                             <th> <%= df.format(amortizacao)%> </th>
-                            <th> <%=  df.format(saldodevedor)%> </th>
+                            <th> <%= df.format(saldodevedor)%> </th>
                         </tr>
 
 
