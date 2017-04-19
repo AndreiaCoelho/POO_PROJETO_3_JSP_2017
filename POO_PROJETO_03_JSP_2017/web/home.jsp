@@ -112,7 +112,7 @@
                         </div>
                         <div class="col-xs-6 col-sm-3 col-md-6">
                             <img src="images/Daniel.jpeg" width="200" height="200" class="img-circle" alt="Generic placeholder thumbnail"/>
-                            <h4>Daniel</h4>
+                            <h4>Daniel Alves</h4>
                             <span class=""text-muted> Desenvolvedor do JSP Amortização Americana e Tabela Price</span>
                         </div>
                     </div>
